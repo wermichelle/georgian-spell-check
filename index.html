@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Georgian Spell Check for Adobe InDesign</title>
+    <meta name="description" content="Spelling and typography checker for Georgian text in Adobe InDesign: offline dictionary, Georgian quotes and dashes, optional AI check, one-click fixes." />
+    <link rel="icon" href="assets/icon-96.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="brand" href="./"><img src="assets/icon-96.png" alt="" />Georgian Spell Check</a>
+        <nav>
+          <a href="ka.html" lang="ka">ქართულად</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>Georgian spell check for Adobe InDesign</h1>
+        <p>Find spelling and typography mistakes in Georgian text, see them underlined on the page, and fix them with one click. Every fix can be undone.</p>
+        <a class="badge" href="#install">How to install</a>
+      </section>
+
+      <img class="shot" src="assets/screenshot-1.png" alt="The Georgian Spell Check panel next to an InDesign page with errors underlined in red" />
+
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card"><h3>Offline dictionary</h3><p>A Georgian Hunspell dictionary checks 50,000 words in about a second. No internet needed.</p></div>
+        <div class="card"><h3>Georgian typography</h3><p>Converts "…" and “…” to „…“, removes extra spaces, and replaces a hyphen between spaces with a dash.</p></div>
+        <div class="card"><h3>One-click fixes</h3><p>Fix one place, every occurrence of the same mistake, or all at once. One Undo reverts the whole fix.</p></div>
+        <div class="card"><h3>Marks on the page</h3><p>Errors get a red wavy underline in the document. The marks do not print and do not export to PDF.</p></div>
+        <div class="card"><h3>Optional AI check</h3><p>Anthropic Claude finds word-form, grammar and punctuation errors, with a short explanation for each.</p></div>
+        <div class="card"><h3>Personal dictionary</h3><p>Add names and terms once. Import and export the list as a text file.</p></div>
+      </div>
+
+      <h2>What it checks</h2>
+      <ul>
+        <li>The whole document, the current story, or only the selected text, including tables and footnotes.</li>
+        <li>Modern Georgian (Mkhedruli), also in all caps (Mtavruli).</li>
+        <li>Interface in English and Georgian.</li>
+      </ul>
+
+      <h2 id="install">Install</h2>
+      <ol>
+        <li>Open the Creative Cloud desktop app and go to <strong>Stock &amp; Marketplace → Plugins</strong>.</li>
+        <li>Search for <strong>Georgian Spell Check</strong> and click <strong>Get</strong>.</li>
+        <li>In InDesign, open <strong>Plug-Ins → Georgian Spell Check</strong>.</li>
+      </ol>
+      <p>Requires Adobe InDesign 2023 (18.5) or later.</p>
+
+      <h2>How to use</h2>
+      <ol>
+        <li>Choose what to check: whole document, current story, or selected text.</li>
+        <li>Click <strong>Check</strong> for the dictionary and typography check (free, offline), or <strong>AI check</strong> to add the AI check.</li>
+        <li>Click a result to jump to it in the document.</li>
+        <li>Click <strong>Fix</strong>, pick another suggestion, type your own with <strong>Edit</strong>, or choose <strong>Ignore</strong> / <strong>Add to dictionary</strong>.</li>
+        <li><strong>Fix all</strong> fixes every visible result after you confirm. Use Edit → Undo (⌘Z / Ctrl+Z) to revert it in one step.</li>
+      </ol>
+
+      <h2>AI check</h2>
+      <p class="note">The AI check is optional. It uses <a href="https://www.anthropic.com/">Anthropic</a>'s Claude models with your own Anthropic API key, which you enter in the plugin settings. Anthropic bills the usage to your account; the panel shows the cost of each check. Paragraphs are sent to Anthropic only when you click <strong>AI check</strong>. The dictionary and typography checks work without a key and never send text anywhere. See the <a href="privacy.html">privacy policy</a>.</p>
+
+      <h2 id="support">Support</h2>
+      <p>Questions, bug reports or words the dictionary is missing: <a href="mailto:wermichelle@gmail.com">wermichelle@gmail.com</a>.</p>
+
+      <h2>Credits</h2>
+      <p>Georgian dictionary: <a href="https://github.com/gamag/ka_GE.spell">ka_GE.spell</a> by Gabriel Margiani (MIT), built from <a href="https://github.com/bumbeishvili/GeoWordsDatabase">GeoWordsDatabase</a> by Dato Bumbeishvili (MIT) and <a href="http://crubadan.org/">Crúbadán</a> by Kevin Scannell (CC BY 4.0). Spelling engine: <a href="https://github.com/wooorm/nspell">nspell</a> (MIT).</p>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>© 2026 Wer Michelle · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="mailto:wermichelle@gmail.com">wermichelle@gmail.com</a></p>
+        <p>Adobe and InDesign are either registered trademarks or trademarks of Adobe in the United States and/or other countries. Claude is a trademark of Anthropic. Georgian Spell Check is an independent plugin and is not affiliated with or endorsed by Adobe or Anthropic.</p>
+      </div>
+    </footer>
+  </body>
+</html>
